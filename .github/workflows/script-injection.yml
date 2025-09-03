@@ -10,7 +10,7 @@ jobs:
       - name: Assign label
         # use action, pass title as an input to the action, it will not be executed in 
         # any shell, but instead it will be extracted and handled by Github and will never reach a shell
-        # Or
+        # Or store user entered data in env before using it
         env:
           TITLE: ${{ github.event.issue.title }}
         run: |
